@@ -1,0 +1,321 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"60 C:\Users\dtan\MPLABXProjects\final.X\final.c
+[v _main main `(v  1 e 1 0 ]
+"148
+[v _ISR ISR `II(v  1 e 1 0 ]
+"208
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"229
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+[v i1_ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"253
+[v _init_PWM init_PWM `(v  1 e 1 0 ]
+"271
+[v _setPWM_DutyCycle setPWM_DutyCycle `(v  1 e 1 0 ]
+[v i1_setPWM_DutyCycle setPWM_DutyCycle `(v  1 e 1 0 ]
+"282
+[v _UART_send_char UART_send_char `(v  1 e 1 0 ]
+"288
+[v _UART_send_string UART_send_string `(v  1 e 1 0 ]
+"294
+[v _config_UART config_UART `(v  1 e 1 0 ]
+"318
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"324
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+[v i1_EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"634 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"641
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"648
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"892
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2288
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2295
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+[s S140 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"2331
+[u S147 . 1 `S140 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES147  1 e 1 @396 ]
+"2361
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2383
+[v _ADCS0 ADCS0 `VEb  1 e 0 @254 ]
+"2386
+[v _ADCS1 ADCS1 `VEb  1 e 0 @255 ]
+"2389
+[v _ADCS2 ADCS2 `VEb  1 e 0 @1278 ]
+"2395
+[v _ADFM ADFM `VEb  1 e 0 @1279 ]
+"2404
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2446
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"2449
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"2452
+[v _CCP1X CCP1X `VEb  1 e 0 @189 ]
+"2455
+[v _CCP1Y CCP1Y `VEb  1 e 0 @188 ]
+"2482
+[v _CHS0 CHS0 `VEb  1 e 0 @251 ]
+"2485
+[v _CHS1 CHS1 `VEb  1 e 0 @252 ]
+"2488
+[v _CHS2 CHS2 `VEb  1 e 0 @253 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2560
+[v _EEPGD EEPGD `VEb  1 e 0 @3175 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2575
+[v _GO_DONE GO_DONE `VEb  1 e 0 @250 ]
+"2599
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"2602
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"2605
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2617
+[v _PCFG0 PCFG0 `VEb  1 e 0 @1272 ]
+"2620
+[v _PCFG1 PCFG1 `VEb  1 e 0 @1273 ]
+"2623
+[v _PCFG2 PCFG2 `VEb  1 e 0 @1274 ]
+"2626
+[v _PCFG3 PCFG3 `VEb  1 e 0 @1275 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2665
+[v _RA3 RA3 `VEb  1 e 0 @43 ]
+"2668
+[v _RA4 RA4 `VEb  1 e 0 @44 ]
+"2671
+[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"2686
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"2689
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"2719
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"2740
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2794
+[v _RX9 RX9 `VEb  1 e 0 @198 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2857
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"2860
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"2872
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"2875
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2884
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"2887
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"2890
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"2893
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2917
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
+"2926
+[v _TRISA3 TRISA3 `VEb  1 e 0 @1067 ]
+"2929
+[v _TRISA4 TRISA4 `VEb  1 e 0 @1068 ]
+"2932
+[v _TRISA5 TRISA5 `VEb  1 e 0 @1069 ]
+"2935
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1072 ]
+"2947
+[v _TRISB4 TRISB4 `VEb  1 e 0 @1076 ]
+"2950
+[v _TRISB5 TRISB5 `VEb  1 e 0 @1077 ]
+"2965
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2974
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"2983
+[v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3022
+[v _TX9 TX9 `VEb  1 e 0 @1222 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"3046
+[v _WR WR `VEb  1 e 0 @3169 ]
+"43 C:\Users\dtan\MPLABXProjects\final.X\final.c
+[v _counter0 counter0 `uc  1 e 1 0 ]
+"44
+[v _flag_timer_servor1 flag_timer_servor1 `uc  1 e 1 0 ]
+"45
+[v _flag_timer_servor2 flag_timer_servor2 `uc  1 e 1 0 ]
+"48
+[v _flag_dc flag_dc `uc  1 e 1 0 ]
+"53
+[v _result result `uc  1 e 1 0 ]
+"56
+[v _count_sp1 count_sp1 `uc  1 e 1 0 ]
+"57
+[v _count_sp2 count_sp2 `uc  1 e 1 0 ]
+"58
+[v _count_sp3 count_sp3 `uc  1 e 1 0 ]
+"60
+[v _main main `(v  1 e 1 0 ]
+{
+"145
+} 0
+"271
+[v _setPWM_DutyCycle setPWM_DutyCycle `(v  1 e 1 0 ]
+{
+[v setPWM_DutyCycle@DC DC `ui  1 p 2 11 ]
+"279
+} 0
+"253
+[v _init_PWM init_PWM `(v  1 e 1 0 ]
+{
+"269
+} 0
+"294
+[v _config_UART config_UART `(v  1 e 1 0 ]
+{
+"315
+} 0
+"324
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v EEPROM_Write@Address Address `uc  1 a 1 wreg ]
+[v EEPROM_Write@Address Address `uc  1 a 1 wreg ]
+[v EEPROM_Write@Data Data `uc  1 p 1 5 ]
+[v EEPROM_Write@Address Address `uc  1 a 1 6 ]
+"337
+} 0
+"318
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@Address Address `uc  1 a 1 wreg ]
+[v EEPROM_Read@Address Address `uc  1 a 1 wreg ]
+[v EEPROM_Read@Address Address `uc  1 a 1 5 ]
+"323
+} 0
+"229
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@ADC_channel ADC_channel `uc  1 a 1 wreg ]
+"249
+[v ADC_Read@result result `ui  1 a 2 8 ]
+"229
+[v ADC_Read@ADC_channel ADC_channel `uc  1 a 1 wreg ]
+"231
+[v ADC_Read@ADC_channel ADC_channel `uc  1 a 1 10 ]
+"251
+} 0
+"208
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"227
+} 0
+"148
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"203
+} 0
+"271
+[v i1_setPWM_DutyCycle setPWM_DutyCycle `(v  1 e 1 0 ]
+{
+[v i1setPWM_DutyCycle@DC DC `ui  1 p 2 6 ]
+"279
+} 0
+"324
+[v i1_EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v i1EEPROM_Write@Address Address `uc  1 a 1 wreg ]
+[v i1EEPROM_Write@Address Address `uc  1 a 1 wreg ]
+[v i1EEPROM_Write@Data Data `uc  1 p 1 0 ]
+[v i1EEPROM_Write@Address Address `uc  1 a 1 1 ]
+"337
+} 0
+"229
+[v i1_ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v i1ADC_Read@ADC_channel ADC_channel `uc  1 a 1 wreg ]
+"249
+[v i1ADC_Read@result result `ui  1 a 2 3 ]
+"229
+[v i1ADC_Read@ADC_channel ADC_channel `uc  1 a 1 wreg ]
+"231
+[v i1ADC_Read@ADC_channel ADC_channel `uc  1 a 1 5 ]
+"251
+} 0
+"288
+[v _UART_send_string UART_send_string `(v  1 e 1 0 ]
+{
+[v UART_send_string@st_pt st_pt `*.24uc  1 a 1 wreg ]
+[v UART_send_string@st_pt st_pt `*.24uc  1 a 1 wreg ]
+[v UART_send_string@st_pt st_pt `*.24uc  1 a 1 2 ]
+"292
+} 0
+"282
+[v _UART_send_char UART_send_char `(v  1 e 1 0 ]
+{
+[v UART_send_char@bt bt `uc  1 a 1 wreg ]
+[v UART_send_char@bt bt `uc  1 a 1 wreg ]
+[v UART_send_char@bt bt `uc  1 a 1 0 ]
+"286
+} 0
